@@ -1,0 +1,181 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: pink;
+}
+
+.player {
+    max-width: 480px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.dashboard {
+    padding: 16px  0;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    max-width: 480px;
+    width: 100%;
+    border-bottom: 1px solid #ebebeb;
+    border-radius: 5px;
+    z-index: 100;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+header h4 {
+    color: black;
+    font-size: 12px;
+}
+
+header h2 {
+    color: palevioletred;;
+    font-size: 20px;
+    -webkit-background-clip: text;
+}
+
+.cd {
+    display: flex;
+    margin: auto;
+    width: 200px;
+}
+
+.cd-thumb {
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    background-size: cover;
+    margin: auto;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 18px 0 8px 0;
+}
+
+.control .btn {
+    color: #666; 
+    padding: 18px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+}
+
+.control .btn-toggle-play {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    padding: 0;
+}
+
+.margin-left {
+    margin-left: 3px;
+}
+
+.control .icon-pause {
+    display: none;
+}
+
+.timeandprogress {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 16px;
+}
+
+.progress {
+    width: 60%;
+    height: 8px;
+    -webkit-appearance: none;
+    background: linear-gradient(90deg, rgb(176, 15, 176) 0%, rgb(249, 199, 207) 75%);
+    outline: none;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+    -webkit-transition: 0.2s;
+    accent-color: #333;
+}
+
+.playlist {
+    margin-top: 400px;
+    padding: 12px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 10%);
+}
+
+
+.song .thumb {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 8px;
+}
+
+.song .body {
+    flex: 1;
+    padding: 0 16px;
+}
+
+.song .title {
+    font-size: 18px;
+    color: black;
+}
+
+.song .author {
+    font-size: 12px;
+    color: #999;
+}
+
+.song .option {
+    position: relative;
+    padding: 16px 8px;
+    color: #999;
+    font-size: 18px;
+}
+
+.song.active {
+    background-color: rgb(220, 220, 247);
+}
+
+.song.active .title,
+.song.active .author {
+    color: palevioletred;
+}
+
+.song:hover {
+    cursor: pointer;
+}
+
+.song:active {
+    opacity: 0.8;
+    background-color: pink;
+    cursor: progress;
+}

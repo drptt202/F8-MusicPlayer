@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>F8 Music Player</title>
+</head>
+<body>
+    <div class="player">
+        <div class="dashboard">
+            <!-- Header -->
+            <header>
+                <h4>Now playing</h4>
+                <h2>Album name</h2>
+            </header>
+
+            <!-- CD -->
+            <div class="cd">
+                <div class="cd-thumb">
+                    <!-- style="background-image: url('/assets/img/alice1.jpg');"> -->
+                </div>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+                <button class="btn btn-repeat">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+                <button class="btn volume-minus">-</button>                
+                <button class="btn btn-previous">
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button class="btn btn-toggle-play">
+                    <i class="fa-solid fa-pause icon-pause"></i>
+                    <i class="fa-solid fa-play icon-play margin-left"></i>
+                </button>
+                <button class="btn btn-next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+                <button class="btn volume-plus">+</button>
+                <button class="btn btn-random">
+                    <i class="fa-solid fa-shuffle"></i>
+                </button>
+
+            </div>
+
+            <div class="timeandprogress">
+                <span class="current-time"></span>
+                <input type="range" id="progress" class="progress" value="0" step="1" min="0" max="100">
+                <span class="ended-time"></span>
+
+            </div>
+            
+            <audio src="" id="audio"></audio>
+        </div>
+
+         <!-- Playlist -->
+         <div class="playlist">
+            <!-- <div class="song">
+                <div class="thumb" 
+                    style="background-image: url('./assets/img/alice1.jpg')">
+                </div>
+                <div class="body">
+                    <div class="title">Tên bài hát</div>
+                    <p class="author">Ca sĩ / nhóm nhạc</p>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-ellipsis"></i>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="./assets/js/style.js">
+    </script>
+</body>
+</html>
